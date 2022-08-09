@@ -13,12 +13,12 @@
     <main>
         <div class="contenedorTexto">
             <img src="recursos/logo.png">
-            <textarea id="texto">Ingrese el texto aquí</textarea>
+            <textarea id="texto" placeholder="Ingrese el texto aquí"></textarea>
             <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
             <div class="botonera">
                 <input type="button" id="btnEncriptar" value="Encriptar" onclick="validarMayusculas()";/>
                 <input type="button" id="btnDesencriptar" value="Desencriptar" onclick="desencriptar()" />
-        
+                <i id="refresh" class="fa-solid fa-arrow-rotate-right" onclick="borrarTodo()"></i>
             </div>
         </div>
       

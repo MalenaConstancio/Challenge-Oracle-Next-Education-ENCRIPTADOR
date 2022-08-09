@@ -241,6 +241,11 @@ body{
     line-height: 19px;
     color: #0A3871;
 }
+#refresh{
+    font-size: 30px;
+    margin-top: 16px;
+    color: #0A3871;
+}
 
 footer{
     position: absolute;

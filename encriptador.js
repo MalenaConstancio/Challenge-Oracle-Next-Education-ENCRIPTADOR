@@ -14,7 +14,7 @@ function encriptar(){
 
 function validarMayusculas() {    
     
-        if(document.getElementById("texto").value.match(/^[a-z ]*$/)) {
+        if(document.getElementById("texto").value.match(/^[a-z ]{1,2000}$/)) {
             document.getElementById("tres").value = encriptar();
         } else {
             alert("Solo letras minúsculas, sin acentos.");
@@ -38,6 +38,12 @@ function copiar(){
     alert("Se copio el texto en el portapapeles");
 }
 
+function borrarTodo(){
+    document.getElementById("tres").value ="";
+    document.getElementById("texto").value="";
+    document.getElementById("textoEncriptado").style.display = "none";
+    document.getElementById("mensajeNoEncontrado").style.display = "inline";
+}
 
 
     
